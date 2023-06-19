@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+
+const inputarray = [
+
+{
+    id : 1 ,
+    name : "user1"
+} ,
+
+
+{
+    id : 2 ,
+    name : "user2"
+} ,
+
+{
+    id : 3 ,
+    name : "user3"
+} 
+,
+{
+    id : 4,
+    name : "user4"
+} 
+ ,
+ {
+    id : 5 ,
+    name : "user5"
+} 
+
+
+
+
+
+
+];
+
+
+
+
+const result = inputarray.map( (currval) => {
+
+    delete currval.name;
+
+
+if (currval.id % 2 === 0) { 
+    return {...currval, gender : "male" }
+    
+} else {
+    return {...currval , gender : "female"}
+    
+}
+
+ 
+
+
+})
+
+
+console.log(result);
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
